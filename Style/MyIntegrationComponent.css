@@ -1,0 +1,24 @@
+/* MyIntegrationComponent.css V1 */
+.THIS {
+	text-align: center;
+}
+
+body.THIS {
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.2), #000);
+    padding-bottom: 200px;
+}
+
+.THIS .button {
+    padding-top: 10px;
+}
+
+.THIS .response {
+    padding-top: 10px;
+    color: #1C4A82;
+    font: 30px arial, sans-serif;
+ }
+
+.THIS h1{
+    font-size: 35pt;
+    color: rgb(232, 232, 232);
+}

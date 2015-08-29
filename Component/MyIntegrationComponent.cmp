@@ -1,0 +1,24 @@
+<!-- MyIntegrationComponent.cmp V4 -->
+<aura:component controller="MyRestController" implements="force:appHostable">
+    
+    <aura:attribute name="endPoint" type="String" default="callout:Inspirational_API/getMethod"/>
+    <aura:attribute name="method" type="String" default="GET"/>
+    <aura:attribute name="ResponseBody" type="String" />
+    
+    <body>   
+        
+        <h1>#Dreamforce15</h1>
+        
+        <img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_components.png"
+             width="200" height="200"/>
+        
+        <div class="button">
+            <ui:button label="Get Insipired" press="{!c.impactRestAPI}"/>
+        </div>
+        
+        <div class="response">
+            {!v.ResponseBody.inspirationalMessage}
+        </div>  
+    </body>
+    
+</aura:component>
